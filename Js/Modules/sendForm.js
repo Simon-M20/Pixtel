@@ -21,6 +21,6 @@ export const sendForm = () => {
             swal("Perfecto!", "Te haz puesto en contacto con Pixtel!", "success");
         }
 
-        form.reset();
+//         form.reset();
     })
 }
