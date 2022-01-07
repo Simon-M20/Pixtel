@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simón Moreno" />
+    <meta name="description" content="Sabemos que no somos los únicos expertos en marketing digital, pero trabajamos día a día para ser los mejores. Nuestro proceso viene de la alegría de la experimentación, de desarrollos abiertos y una extraordinaria atención al detalle. ¡Animate a trabajar con nosotros!" />
+    <link rel="shortcut icon" href="Img/Pixtel Logo.jpeg" type="image/x-icon">
+    <title>Pixtel | Servicio Digital de Comunicación</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Hambuger CSS -->
+    <link rel="stylesheet" href="CSS/hamburger.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Swiper Js (CSS) CDN -->
+    <link
+      rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- FontAwesome icon CDN -->
+    <script src="https://kit.fontawesome.com/a5cb44e5e5.js" crossorigin="anonymous"></script>
+    <!-- Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- SweetAlert.js CDN -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    
+    <header class="flex justify-between items-center w-full py-2 px-4 lg:w-4/5 mx-auto border-b">
+        <section>
+            <p class="font-extrabold md:text-2xl text-xl">Pix<span style="color: #87fee2;">tel</span><small class="font-extrabold ml-1 text-sm">2.0</small></p>
+        </section>
+        <nav class="header__menu">
+            <ul>
+                <li class="menu-link"><a href="#Home">Inicio</a></li>
+                <li class="menu-link"><a href="#About us">Sobre Nosotros</a></li>
+                <li class="menu-link"><a href="#Services">Servicios</a></li>
+                <li class="menu-link">
+                    <a href="#Contact" class="flex justify-center items-center">
+                        <span class="material-icons mr-2">
+                            message
+                        </span>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="hamburger hamburger--emphatic menu-btn" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </header>
+
+    <!-- Scroll Top Btn -->
+    <button class="scroll-top" title="Go to top"><span class="material-icons">
+        expand_less
+        </span>
+    </button>
+
+    <main>
+
+        <section class="flex flex-wrap justify-center items-center md:ml-8 relative md:pt-10 md:pb-32 py-16">
+            <article class="flex flex-col justify-center items-center md:w-1/2 w-full px-3">
+                <h1 class="font-bold md:text-5xl text-4xl uppercase text-center tracking-wider leading-relaxed mb-6">Pixtel | <span id="typed"></span></h1>
+                <h2 class="text-lg text-center p-2">¡Construimos id<span>ea</span>s <span>para</span> tú <span>negocio!</span></h2>
+                <p class="text-center p-2 leading-relaxed">Convertimos su idea de negocio o emprendimiento en todo un éxito con las herramientas que nos brinda internet.</p>
+                <!-- <p>Servicio digital de comunicación</p> -->
+                <button class="flex justify-center items-center contact-btn">
+                    <a class="flex justify-center items-center" href="#Contact">
+                        <span class="material-icons mr-2">
+                            campaign
+                        </span>
+                        Contactanos
+                    </a>
+                </button>
+            </article>
+
+            <article class="md:w-2/5 w-3/4 h-full relative flex justify-end items-end">
+                <figure class="header__image">
+                    <img class="w-full" src="Img/scial-bg.png" alt="Social image bg">
+                    <figcaption class="header__color"></figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section id="Home" class="main__video md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">
+                <!-- <i>⚡</i> -->
+                Agencia Digital
+                <!-- <i>⚡</i> -->
+            </h2>
+            <figure class="w-4/5 h-full flex justify-center items-center mt-10 video-player">
+                <video id="video">
+                    <source src="Assets/Primer plano de un lugar de trabajo autónomo.mp4" type="video/mp4">
+                </video>
+                <div class="controls">
+                    <button class="play-button control-button">
+                        <img class="w-16" src="Img/boton-de-play.png" alt="">
+                    </button>
+                    <div class="flex justify-between items-center w-11/12 absolute bottom-1 controls-video">
+                        <input type="range" min="0" max="100" class="timeline" value="0" />
+                        <button class="sound-button control-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                            </svg>
+                        </button>
+                        <button class="control-button fullscreen-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </figure>
+        </section>
+
+        <section id="About us" class="main__about md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">Sobre Nosotros</h2>
+            <section class="flex items-center flex-wrap-reverse mt-10">
+                <figure class="lg:w-1/2 lg:pr-8 pr-0 lg:mt-0 mt-6">
+                    <img src="Img/Cool-bg.png" alt="">
+                </figure>
+                <article class="flex flex-col justify-start items-start md:pl-8 pl-0 lg:w-1/2">
+                    <h3 class="text-2xl p-2 tracking-wide font-extrabold mb-2">· ¿Por qué nosotros y no otra agencia? ·</h3>
+                    <p class="p-2 leading-relaxed">En Pixtel trabajamos con una estructura dinámica que nos permite adaptarnos sin fisuras, ni tensiones, de acuerdo al tamaño del cliente. Sabemos que no somos los únicos expertos en marketing digital, pero trabajamos día a día para ser los mejores.</p>
+                    <p class="leading-relaxed p-2 block">Queremos colaborar con las pequeñas, medianas y grandes empresas, con todos nuestros servicios, junto con nuestra más alta creatividad y profesionalismo diseñamos contigo una estrategia realista, coherente, consistente y a la medidad de tus necesidades, con la finalidad de incrementar la competitividad, visibilidad y posicionamiento de tu marca en los medios digitales relevantes para tus clientes potenciales a precios economicos para que toda empresa o negocio disfrute de la tecnología.</p>
+                </article>
+            </section>
+        </section>
+
+        <section id="Services" class="main__services md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">Lo que hacemos</h2>
+            <section class="flex flex-wrap mt-10">
+                <article class="lg:w-1/2 w-full">
+                    <h3 class="text-2xl p-2 tracking-wide font-extrabold mb-2">· ¿Qué ofrecemos para tí? ·</h3>
+                    <p class="leading-relaxed p-2">Sabemos que cada empresa requiere de una estrategia personalizada y diferente. Nuestro proceso viene de la alegría de la experimentación, de desarrollos abiertos y una extraordinaria atención al detalle. ¡Animate a trabajar con nosotros!</p>
+                    <button class="py-3 px-8 rounded-md mt-4 flex justify-center items-center shadow-2xl relative button-animate button-bg">
+                        <span class="flex h-3 w-3 absolute -right-1 -top-1.5">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3"></span>
+                        </span>
+                        <a class="flex justify-center items-center" href="#More-services">
+                            Ver Más
+                            <span class="material-icons ml-4">
+                                east
+                            </span>
+                        </a>
+                    </button>
+                </article>
+    
+                <article class="lg:w-1/2 w-full flex flex-wrap justify-center items-center lg:mt-0 mt-6">
+                    <section class="w-full flex md:flex-nowrap flex-wrap justify-center items-center">
+                        <figure class="services-card shadow-lg">
+                            <div class="card-face card-front">
+                                <img class="w-1/3" src="Img/computer -2.png" alt="Web Design icon">
+                                <figcaption class="flex flex-wrap justify-between items-end mt-3">
+                                    <h3 class="font-extrabold text-lg my-2">Website <br> Development</h3>
+                                    <button class="flex justify-end items-end w-auto px-2 py-1 rounded h-1/2 md:mt-0 mt-1 hover:shadow-2xl shadow-md">
+                                        <a class="flex justify-center items-center" href="#More-services">
+                                            <span class="material-icons">
+                                                east
+                                            </span>
+                                        </a>
+                                    </button>
+                                </figcaption>
+                            </div>
+                            <div class="card-face card-back">
+                                <p class="text-center text-sm">" Nuestros <span style="color: #87fee2;">diseños</span> son <span style="color: #87fee2;">dinámicos</span>, <span style="color: #87fee2;">funcionales</span> y adaptables a cualquier dispositivo electrónico. "</p>
+                            </div>
+                        </figure>
+    
+                        <figure class="services-card shadow-lg">
+                            <div class="card-face card-front">
+                                <img class="w-1/3" src="" alt="E-commerce icon">
+                                <figcaption class="flex flex-wrap justify-between items-end mt-3">
+                                    <h3 class="font-extrabold text-lg mt-4">Tienda <br>E-commerce</h3>
+                                    <button class="flex justify-end items-end w-auto px-2 py-1 rounded h-1/2 md:mt-0 mt-1 hover:shadow-2xl shadow-md">
+                                        <!-- <a class="flex justify-center items-center" href="#More-services"> -->
+                                            <span class="material-icons">
+                                                east
+                                            </span>
+                                        <!-- </a> -->
+                                    </button>
+                                </figcaption>
+                            </div>
+                            <div class="card-face card-back">
+                                <p class="text-center text-sm">"Creamos un diseño de <span style="color: #87fee2;">tiendas</span> online <span style="color: #87fee2;">profesionales</span> para vender productos en <span style="color: #87fee2;"></span>, 24 horas al día en cualquier país del mundo."</p>
+                            </div>
+                        </figure>
+                    </section>
+    
+                    <section class="w-full flex justify-center items-center md:flex-nowrap flex-wrap">
+                        <figure class="services-card shadow-lg">
+                            <div class="card-face card-front">
+                                <img class="w-1/3" src="Img/digital-marketing -2.png" alt="Marketing icon">
+                                <figcaption class="flex justify-between items-end mt-3">
+                                    <h3 class="font-extrabold text-lg my-2">Digital <br> Marketing</h3>
+                                    <button class="flex justify-end items-end w-auto px-2 py-1 rounded h-1/2 md:mt-0 mt-1 hover:shadow-2xl shadow-md">
+                                        <!-- <a class="flex justify-center items-center" href="#More-services"> -->
+                                            <span class="material-icons">
+                                                east
+                                            </span>
+                                        <!-- </a> -->
+                                    </button>
+                                </figcaption>
+                            </div>
+                            <div class="card-face card-back">
+                                <p class="text-center text-sm">" ¿Tienes una idea de negocio? Nosotros nos encargamos de aportar toda nuestra experiencia, para que lleves a cabo tu <span style="color: #87fee2;">proyecto</span> y el <span style="color: #87fee2;">éxito</span> sea <span style="color: #87fee2;">inevitable</span>. "</p>
+                            </div>
+                        </figure>
+    
+                        <figure class="services-card shadow-lg">
+                            <div class="card-face card-front">
+                                <img class="w-1/3" src="img/fotografia.png" alt="Camera icon">
+                                <figcaption class="flex flex-wrap justify-between items-end">
+                                    <h3 class="font-extrabold text-lg my-4">Servicio de <br>Fotografia</h3>
+                                    <button class="flex justify-end items-end w-auto px-2 py-1 rounded h-1/2 hover:shadow-2xl shadow-md">
+                                        <!-- <a class="flex justify-center items-center" href="#More-services"> -->
+                                            <span class="material-icons">
+                                                east
+                                            </span>
+                                        <!-- </a> -->
+                                    </button>
+                                </figcaption>
+                            </div>
+                            <div class="card-face card-back">
+                                <p class="text-center text-sm">" ¿Quieres renovarte? ¿Quieres mejorar tu imagen de empresa? Pixtel pone a tu disposición fotógrafos que sacarán el lado más emocional y profesional de tu negocio. "</p>
+                            </div>
+                        </figure>
+                    </section>
+                </article>
+            </section>
+        </section>
+
+        <section id="Why-us" class="main__benefit md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">¿ Por qué elegirnos ?</h2>
+            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center">· Nuestros Beneficios ·</h3>
+            <article class="grid md:grid-cols-3 grid-cols-4 grid-rows-2 md:gap-5 gap-3 justify-items-stretch md:w-4/5 mx-auto px-4 mt-10 mb-2">
+                <figure class="col-span-2 row-span-2">
+                    <img class="h-full" src="Img/Agencia.jpg" alt="Who we are">
+                </figure>
+                <figure class="md:col-span-1 col-span-2">
+                    <img class="h-full" src="Img/Web-Developer-Agency.jpg" alt="What we do">
+                </figure>
+                <figure class="md:col-span-1 col-span-2">
+                    <img class="h-full" src="Img/DesarrolloWeb.jpg" alt="How we work">
+                </figure>
+            </article>
+            <article class="flex flex-wrap justify-center items-center mx-auto px-4 md:w-4/5">
+                <div class="md:w-1/3 w-full border-l my-2 benefit-div">
+                    <p class="leading-relaxed p-2 benefit-p flex justify-center items-center">Brinda un servicio increíble con nuestras herramientas. Combinamos estrategia con marketing, diseño y tecnología para asegurarnos de que el cliente lo prefiera.</p>
+                </div>
+                <div class="md:w-1/3 w-full border-l my-2 benefit-div">
+                    <p class="leading-relaxed p-2 benefit-p flex justify-center items-center">Diseñamos, desarrollamos y potenciamos tu negocio. Personalizamos cada proyecto, hace que cada diseño sea irrepetible, atractivo, original y por supuesto funcional.</p>
+                </div>
+                <div class="md:w-1/3 w-full border-l my-2 benefit-div">
+                    <p class="leading-relaxed p-2 benefit-p flex justify-center items-center">Somos un agente independiente que conoce el panorama competitivo de las agencias de marketing y publicidad disponibles siempre que nos necesites.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="main__call md:py-24 py-16 px-0">
+            <article class="w-full flex flex-wrap lg:justify-evenly justify-center items-center px-8 py-6 shadow-lg">
+                <p class="text-2xl font-extrabold text-center leading-relaxed">¿QUÉ ESPERÁS? ¡Adquirí nuestros servicios y reactivá tu negocio online!</p>
+                <button class="px-8 py-3 rounded-md shadow hover:shadow-lg md:mx-0 mx-auto lg:my-0 my-4 font-semibold uppercase tracking-wider flex justify-center items-center bg-black relative button-animate">
+                    <span class="flex h-3 w-3 absolute -right-1 -top-1.5">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3"></span>
+                    </span>
+                    <a class="flex justify-center items-center" href="#Contact">
+                        Contactanos
+                        <span class="material-icons ml-2">
+                            campaign
+                        </span>
+                    </a>
+                </button>
+            </article>
+        </section>
+
+        <section id="More-services" class="main__services md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">Servicios</h2>
+            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center">· Hacé su negocio exitoso con nosotros ·</h3>
+
+            <!-- Swiper -->
+            <article class="swiper mt-10">
+                <!-- Swiper wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Swiper Slides -->
+                        <!-- Marketing Digital -->
+                    <figure class="flex flex-wrap justify-center items-center w-full lg:py-3 md:pt-6 md:pb-0 lg:px-6 md:px-2 swiper-slide">
+                        <img class="lg:w-1/2 rounded-md slides-card-img" src="Img/Agencia-2.jpg" alt="Marketing Digital">
+                        <figcaption class="flex flex-col justify-around items-center lg:w-1/2 slides-card-info md:p-6 py-6 px-5">
+                            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center slides-card-title mb-2">Marketing Digital</h3>
+                            <p>Sabemos que no somos los únicos expertos en marketing digital, pero trabajamos día a día para ser los mejores. Somos una agencia de marketing digital enfocada en brindar esas soluciones que cualquier empresa o negocio en el mundo necesita, con nustros servicios de calidad y con la más grande creatividad de parte de nuestro equipo.</p>
+                            <ul class="w-full text-justify">
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span> Te ayudamos a aumentar la demanda de tus productos y servicios
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span> Consolidamos todas tus actividades de en un solo plan
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                        done
+                                    </span>
+                                    Optimizamos tu inversión de mercadeo haciéndola más efectiva
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Swiper Slides -->
+                        <!-- Web Design -->
+                    <figure class="flex flex-wrap justify-center items-center w-full lg:py-3 md:pt-6 md:pb-0 lg:px-6 md:px-2 swiper-slide">
+                        <img class="lg:w-1/2 rounded-md slides-card-img" src="Img/Programador.jpg" alt="Web Development">
+                        <figcaption class="flex flex-col justify-around items-center lg:w-1/2 slides-card-info md:p-6 py-6 px-5">
+                            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center slides-card-title mb-2">Diseño Web</h3>
+                            <p>Desarrollamos Sitios Web según su necesidad, asegurando Visitas Online con planes para mantener su pagina web fresca y actualizada, cada uno diseñado de forma única. Esto será importantísimo para que las personas que lleguen a tu web, permanezcan en ella. Además, nos esforzamos por asegurar que todos cumplan con los estándares de accesibilidad exigidos por el World Wide Web Consortium.</p>
+                            <ul class="w-full text-justify">
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span> El éxito de tu proyecto web comienza por un buen diseño.
+                                </li>
+                                <!-- <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span>                         Consolidamos todas tus actividades de en un solo plan
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                        done
+                                    </span>
+                                    Optimizamos tu inversión de mercadeo haciéndola más efectiva
+                                </li> -->
+                            </ul>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Swiper Slides -->
+                        <!-- E-Commerce -->
+                    <figure class="flex flex-wrap justify-center items-center w-full lg:py-3 md:pt-6 md:pb-0 lg:px-6 md:px-2 swiper-slide">
+                        <img class="lg:w-1/2 rounded-md slides-card-img" src="https://images.unsplash.com/photo-1551240947-f6c31db1ac28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="Marketing Digital">
+                        <figcaption class="flex flex-col justify-around items-center lg:w-1/2 slides-card-info md:p-6 py-6 px-5">
+                            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center slides-card-title mb-2">Tienda Nube E-Commerce</h3>
+                            <p>Creamos tu tienda online sin dificultades, con metodos de pago integrados, en la plataforma más elegida de Latinoamérica. ¡Está todo integrado, activá lo mejor para tu negocio! Construimos una amplia red de tecnologías, servicios y negocios online que componen nuestro ecosistema.</p>
+                            <ul class="w-full text-justify">
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span> Gestión simple y centralizada.
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span>                         Tu tienda viene preparada con todas las opciones de pago y financiación que estás ofreciendo.
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                        done
+                                    </span>
+                                    Exposición potenciada. Altamente configurable, para que aumentes tus ventas.
+                                </li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Swiper Slides -->
+                        <!-- Fotografía -->
+                    <figure class="flex flex-wrap justify-center items-center w-full lg:py-3 md:pt-6 md:pb-0 lg:px-6 md:px-2 swiper-slide">
+                        <img class="lg:w-1/2 rounded-md slides-card-img" src="https://images.unsplash.com/photo-1551240947-f6c31db1ac28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" alt="Marketing Digital">
+                        <figcaption class="flex flex-col justify-around items-center lg:w-1/2 slides-card-info md:p-6 py-6 px-5">
+                            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center slides-card-title mb-2">Fotografía</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores totam, neque esse est corporis eum quidem culpa, illo quisquam similique fuga nulla odit vel ea accusantium consequuntur eos placeat velit.</p>
+                            <!-- <ul class="w-full text-justify">
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span> Te ayudamos a aumentar la demanda de tus productos y servicios
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                    done
+                                    </span>                         Consolidamos todas tus actividades de en un solo plan
+                                </li>
+                                <li class="flex justify-start items-center p-1.5">
+                                    <span class="material-icons mr-2">
+                                        done
+                                    </span>
+                                    Optimizamos tu inversión de mercadeo haciéndola más efectiva
+                                </li>
+                            </ul> -->
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <!-- Swiper pagination buttons-->
+                <div class="swiper-pagination"></div>
+            </article>
+        </section>
+
+        <section id="Plan" class="main__plan md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">Nuestros Planes</h2>
+            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center">· Elige el que mejor se adapte a ti ·</h3>
+
+            <div class="flex lg:flex-nowrap flex-wrap justify-center items-center xl:w-4/5 w-full mx-auto mt-10">
+                <section class="lg:w-1/3 md:w-1/2 w-2/3 flex flex-col justify-center items-center mx-3 lg:my-0 my-3 py-10 rounded-md shadow-lg main__plan-card">
+                    <h4 class="text-2xl font-thin uppercase mb-6">Básico</h4>
+                    <figure class="flex flex-col justify-center items-center">
+                        <img class="w-1/5" src="img/transferencia-de-dinero.png" alt="Icono">
+                        <figcaption class="">
+                            <p class="font-bold text-3xl text-center mt-3 mb-5">$ 4000<span class="font-semibold text-base">/00</span></p>
+                            <ul class="text-center leading-relaxed">
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Identidad Corporativa.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Logo personalizado.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 3 Vídeos.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 4 historias destacadas.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 6 Posteos.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Redacción en redes.</li>
+                            </ul>
+                            <p class="mt-8"><i class="px-2">📌</i> 5 iconos <span class="font-bold">gratis</span></p>
+                        </figcaption>
+                    </figure>
+
+                </section>
+                <section class="lg:w-1/3 md:w-1/2 w-2/3 flex flex-col justify-center items-center mx-3 lg:my-0 my-3 lg:py-16 py-10 rounded-md shadow-xl main__plan-card">
+                    <h4 class="text-2xl font-thin uppercase mb-6">Standard</h4>
+                    <figure class="flex flex-col justify-center items-center">
+                        <img class="w-1/5" src="img/standar.png" alt="Icono">
+                        <figcaption class="">
+                            <p class="font-bold text-3xl text-center mt-3 mb-5">$ 5000<span class="font-semibold text-base">/00</span></p>
+                            <ul class="text-center leading-relaxed">
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 16 Posteos.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 2 Vídeos.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Diseño de calidad.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Gestión de redes.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Redacción persuasiva.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Actualización de redes.</li>
+                            </ul>
+                            <p class="mt-8"><i class="pr-2">📌</i> 1 Publicidad paga <span class="font-bold">gratis</span></p>
+                        </figcaption>
+                    </figure>
+
+                </section>
+                <section class="lg:w-1/3 md:w-1/2 w-2/3 flex flex-col justify-center items-center mx-3 lg:my-0 my-3 py-10 rounded-md shadow-lg main__plan-card">
+                    <h4 class="text-2xl font-thin uppercase mb-6">Pro</h4>
+                    <figure class="flex flex-col justify-center items-center">
+                        <img class="w-1/5" src="img/transferencia-de-dinero.png" alt="Icono">
+                        <figcaption class="">
+                            <p class="font-bold text-3xl text-center mt-3 mb-5">$ 6000<span class="font-semibold text-base">/00</span></p>
+                            <ul class="text-center leading-relaxed">
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Plan de Marketing.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 16 Posteos.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Gestión de redes.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> 2 Campañas pagas.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Redacción persuasiva.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Whatsapp Bussines.</li>
+                                <li class="py-0.5"><i class="pr-2">⚡</i> Asesoramiento 24/7.</li>
+                            </ul>
+                            <p class="mt-8"><i class="pr-2">📌</i> 2 GIF animados <span class="font-bold">gratis</span></p>
+                        </figcaption>
+                    </figure>
+
+                </section>
+            </div>
+
+            <div class="mt-5 text-center flex flex-col justify-center items-center">
+                <small class="py-1 leading-relaxed">🚀 Elegí nuestros planes promocionales para activar tu emprendimiento en las redes.</small>
+                <small class="py-1 leading-relaxed">👉 Si tú emprendimiento necesita algo más personalizado podés enviarnos un MP y te asesoramos para que alcances tus objetivos!</small>
+                <small class="py-1 leading-relaxed">💯 Contamos con la mejor calidad de programadores, diseñadores, y especialistas en marketing.</small>
+            </div>
+        </section>
+
+        <section id="Team" class="main__team md:py-32 py-16">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">Equipo</h2>
+            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center">· Los miembros de nuestro equipo de expertos ·</h3>
+
+            <div class="flex md:flex-nowrap flex-wrap justify-evenly items-center mt-10 xl:w-1/2 md:w-4/5 w-full main__team-cards">
+                <figure class="flex flex-col justify-center items-center py-12 px-4 md:w-4/5 w-3/5 mx-3 shadow hover:shadow-md lg:my-0 my-3">
+                    <img class="w-1/3" src="Img/Avatar-2.svg" alt="Team member">
+                    <figcaption class="flex flex-col justitfy-center items-center">
+                        <h3 class="text-xl font-extrabold mt-2 pb-1 text-center">Maxi <span style="color: #87fee2;">Mammana</span></h3>
+                        <h4 class="font-thin text-sm" style="color: #87fee2;">Marketing Manager</h4>
+                        <ul class="flex justify-center items-center text-2xl">
+                            <li>
+                                <a href="https://api.whatsapp.com/send/?phone=%2B5493515449189&text&app_absent=0" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp my-5 mx-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/maximammana/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram my-5 mx-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure class="flex flex-col justify-center items-center py-12 px-4 md:w-4/5 w-3/5 mx-3 shadow hover:shadow-md lg:my-0 my-3">
+                    <img class="w-1/3" src="Img/Avatar-2.svg" alt="Team member">
+                    <figcaption class="flex flex-col justitfy-center items-center">
+                        <h3 class="text-xl font-extrabold mt-2 pb-1 text-center">Simón <span style="color: #87fee2;">Moreno</span></h3>
+                        <h4 class="font-thin text-sm" style="color: #87fee2;">Web Developer</h4>
+                        <ul class="flex justify-center items-center text-2xl">
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=584262148909" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp my-5 mx-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/simon_moreno_/" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-instagram my-5 mx-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Simon-M20" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github my-5 mx-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="Contact" class="main__contact md:py-32 py-16 relative">
+            <h2 class="lg:text-4xl text-3xl font-extrabold relative w-full text-center">¿En qué podemos ayudarte?</h2>
+            <h3 class="lg:text-3xl text-2xl font-thin w-full text-center">· Queremos saber sobre tu negocio y ayudarte a crecer ·</h3>
+            <form action="https://formsubmit.co/saimonm0504@gmail.com" method="POST"
+            class="flex flex-col justify-center items-center mt-10 w-full z-40 relative" id="form-submit">
+                <div class="flex flex-wrap md:justify-evenly justify-center items-center w-4/5">
+                    <div class="flex flex-col justify-start items-center mt-4 form__input">
+                        <input class="pl-6 pr-20 py-3 rounded focus:outline-none text-black border" type="text" name="name"
+                        autocomplete="off"
+                        title="The Name is not valid, it only accepts letters and blanks"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                        <span class="py-3 span__info">Name</span>
+                    </div>
+                    <div class="flex flex-col justify-start items-center mt-4 form__input">
+                        <input class="pl-6 pr-20 py-3 rounded focus:outline-none text-black border" type="text"
+                        name="last-name" autocomplete="off"
+                        title="The Last Name is not valid, it only accepts letters and blanks"
+                        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+                        <span class="py-3 span__info">Last Name</span>
+                    </div>
+                </div>
+                <div class="flex flex-wrap md:justify-evenly justify-center items-center w-4/5">
+                    <div class="flex flex-col justify-start items-center mt-4 form__input">
+                        <input class="pl-6 pr-20 py-3 rounded focus:outline-none text-black border" type="email"
+                        name="email" title="Invalid Email"
+                        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                        autocomplete="off" required>
+                        <span class="py-3 span__info">Email</span>
+                    </div>
+                    <div class="flex flex-col justify-start items-center mt-4 form__input">
+                        <input class="pl-6 pr-20 py-3 rounded focus:outline-none text-black border" type="tel" name="phone"
+                        autocomplete="off" title="Invalid phone number" required>
+                        <span class="py-3 span__info">Phone Number</span>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center items-center mt-8">
+                    <div class="flex flex-col items-center justify-center form__input">
+                        <textarea name="message" class="focus:outline-none text-black p-5 rounded border" cols="70" title="Your message must not exceed 255 characters" data-pattern="^.{1,255}$"
+                        required></textarea>
+                        <span class="p-2 span__info">Message</span>
+                    </div>
+                </div>
+                <div class="form__submit">
+                    <input type="submit" class="px-12 py-3 rounded cursor-pointer shadow-lg font-semibold hover:shadow-2xl"
+                    value="Send">
+                </div>
+            
+                <!-- FormSubmit Settings -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <!-- <input type="hidden" name="_cc" value="another@email.com"> -->
+            </form>
+            <!-- Confetti HTML -->
+            <canvas class="overflow-hidden w-full h-full absolute top-0 z-0" id="confetti"></canvas>
+        </section>
+    </main>
+
+    <footer class="pt-16 pb-3 border-t">
+        <section class="mx-auto w-4/5 flex flex-wrap lg:justify-evenly md:justify-between justify-start items-start">
+            <article class="lg:w-1/4 md:2/3 lg:mt-0 mt-3">
+                <h4 class="text-2xl font-extrabold tracking-wide mb-5">Pix<span style="color: #87fee2;">tel</span></h4>
+                <p class="py-2 leading-relaxed">Somos Pixtel, agencia de <span style="color: #87fee2;">Marketing digital</span> que te lleva al siguiente nivel <span style="color: #87fee2;">¿Trabajamos juntos?</span></p>
+                <hr class="mt-5">
+                <div class="text-xl md:hidden block">
+                    <a href="https://www.instagram.com/pixtelcomunicaciones/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram my-5 mx-1"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B5493515449189&text&app_absent=0" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp my-5 mx-1"></i>
+                    </a>
+                </div>
+            </article>
+            <article class="lg:w-1/4 md:2/3 lg:mt-0 mt-3">
+                <h4 class="text-2xl font-extrabold tracking-wide mb-5">Enlaces rápidos</h4>
+                <!-- <h4>Nuestra Compañia</h4> -->
+                <ul class="py-2 leading-relaxed">
+                    <li class="hover:opacity-75"><a href="#Home">Inicio</a></li>
+                    <li class="hover:opacity-75"><a href="#About us">Sobre Nosotros</a></li>
+                    <li class="hover:opacity-75"><a href="#Services">Lo que hacemos</a></li>
+                    <li class="hover:opacity-75"><a href="#Why-us">Por qué elegirnos</a></li>
+                    <li class="hover:opacity-75"><a href="#More-services">Servicios</a></li>
+                    <li class="hover:opacity-75"><a href="#Plan">Planes</a></li>
+                    <li class="hover:opacity-75"><a href="#Team">Equipo</a></li>
+                </ul>
+            </article>
+            <article class="lg:w-1/4 md:2/3 lg:mt-0 mt-3">
+                <h4 class="text-2xl font-extrabold tracking-wide mb-5">Contacto</h4>
+                <figure class="py-2 flex justify-start items-center">
+                    <i class="fas fa-map-marker-alt text-2xl mr-2"></i>
+                    <figcaption>
+                        <p>Argentina</p>
+                    </figcaption>
+                </figure>
+                <figure class="py-2 flex justify-start items-center">
+                    <i class="fas fa-envelope-open-text text-2xl mr-2"></i>
+                    <figcaption>
+                        <p>pixtelcomunicaciones@gmail.com</p>
+                        <!-- <p></p> -->
+                    </figcaption>
+                </figure>
+                <figure class="py-2 flex justify-start items-center">
+                    <i class="fab fa-whatsapp text-3xl mr-2"></i> 
+                    <figcaption>
+                        <p class="leading-relaxed hover:opacity-75"><a href="https://api.whatsapp.com/send/?phone=%2B5493515449189&text&app_absent=0"> +54 9 3515 44-9189</a></p>
+                        <p class="leading-relaxed hover:opacity-75"><a href="https://api.whatsapp.com/send/?phone=5804262148909&text&app_absent=0" rel="noopener" target="_blank"> +58 426-2148909</a></p>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+        <section class="w-4/5 mx-auto pt-3 flex flex-col justify-center items-center">
+            <hr class="my-3 w-full">
+            <small>Pixtel, Agencia Digital © 2021 Todos los derechos reservados</small>
+        </section>
+    </footer>
+
+    <script type="module" src="Js/main.js"></script>
+</body>
+</html>
